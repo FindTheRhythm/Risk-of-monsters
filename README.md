@@ -1,0 +1,151 @@
+# 🚀 2D Action Roguelike Platformer
+
+<p align="center">
+  <img src="docs/banner.gif" alt="Gameplay Banner" width="800"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Unity-6000.3.8f1-black?logo=unity" />
+  <img src="https://img.shields.io/badge/Language-C%23-blue?logo=csharp" />
+  <img src="https://img.shields.io/badge/Platform-PC-lightgrey" />
+  <img src="https://img.shields.io/badge/Status-In%20Development-yellow" />
+</p>
+
+---
+
+## 🎮 Описание проекта
+
+2D экшен-платформер с элементами roguelike, вдохновлённый Risk of Rain.  
+Игрок исследует процедурно сгенерированные уровни, сражается с волнами врагов, собирает предметы и усиливает персонажа.
+
+Основная цель — выжить как можно дольше или победить финального босса.
+
+---
+
+## 🔥 Основные особенности
+
+- ⚔️ Боевая система с атаками, способностями и критическим уроном  
+- 🎲 Процедурная генерация уровней (Tilemap + Prefab chunks)  
+- 👾 Различные типы врагов (ближний, дальний, элитный, босс)  
+- 📈 Система нарастающей сложности  
+- 🧩 Билды через предметы и пассивные эффекты  
+- 🧠 Компонентная архитектура  
+
+---
+
+## 🎥 Геймплей
+
+<p align="center">
+  <img src="docs/gameplay_1.gif" width="45%" />
+  <img src="docs/gameplay_2.gif" width="45%" />
+</p>
+
+---
+
+## 🔁 Игровой цикл
+
+1. Появление на уровне  
+2. Сражение с врагами  
+3. Сбор предметов  
+4. Усиление персонажа  
+5. Активация портала  
+6. Бой с боссом  
+7. Переход на следующий уровень  
+
+---
+
+## 🕹️ Управление
+
+| Действие | Клавиша |
+|----------|--------|
+| Движение | W / A / D |
+| Прыжок | Space |
+| Рывок | Shift |
+| Атака | ЛКМ |
+| Способности | 1 – 4 |
+| Информация | Tab |
+
+---
+
+## 🧱 Архитектура
+
+Проект построен на **component-based подходе Unity**.
+
+### Основные системы
+
+- GameManager — глобальное управление  
+- LevelManager — управление уровнями  
+- SpawnManager — спавн врагов  
+- DifficultyManager — масштабирование сложности  
+- UIManager — управление интерфейсом  
+
+### Игрок
+
+PlayerController
+├── MovementController
+├── CombatController
+└── AbilityController
+
+
+### Враги
+
+
+EnemyBase
+├── MeleeEnemy
+├── RangeEnemy
+└── BossEnemy
+
+
+### Боевая система
+
+- Damage (значение, крит, источник)  
+- IDamageable (интерфейс получения урона)  
+
+### Данные (ScriptableObject)
+
+- ItemData  
+- AbilityData  
+- EnemyData  
+- CharacterData  
+
+---
+
+## 🧪 Генерация уровней
+
+- Генерация на основе seed  
+- Использование Tilemap  
+- Добавление prefab-элементов  
+- Размещение объектов по правилам  
+
+---
+
+## 🎨 Технологии
+
+- Unity 6000.3.8f1  
+- C#  
+- NavMesh  
+- Cinemachine  
+- Input System  
+- TextMeshPro  
+
+---
+
+## 📊 Состояние проекта
+
+### Реализовано
+
+- Управление персонажем  
+- Камера  
+- UI  
+- Враги (базовая логика)  
+- Уровни  
+- Предметы и способности  
+
+### В разработке
+
+- Анимации  
+- Улучшенный AI  
+- Баланс сложности  
+- Звуки  
+
+---
