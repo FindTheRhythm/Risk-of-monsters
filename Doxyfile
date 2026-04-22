@@ -1,0 +1,52 @@
+PROJECT_NAME           = "Risk of Monsters"
+PROJECT_BRIEF          = "Unity 2D roguelike platformer: Risk of Monsters"
+OUTPUT_DIRECTORY       = Docs
+CREATE_SUBDIRS         = NO
+
+OUTPUT_LANGUAGE        = English
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_ANON_NSPACES   = YES
+
+INPUT                  = Assets/Scripts
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.cs
+RECURSIVE              = YES
+
+EXCLUDE                = 
+EXCLUDE_SYMLINKS       = NO
+
+OPTIMIZE_OUTPUT_FOR_CSHARP = YES
+EXTENSION_MAPPING      = cs=C#
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE_HUE    = 220
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+
+GENERATE_LATEX         = NO
+
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_IMAGE_FORMAT       = svg
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = Assets/Scripts
