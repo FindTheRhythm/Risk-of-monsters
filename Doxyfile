@@ -10,9 +10,9 @@ EXTRACT_STATIC         = YES
 EXTRACT_LOCAL_CLASSES  = YES
 EXTRACT_ANON_NSPACES   = YES
 
-INPUT                  = Assets/Scripts
+INPUT                  = ./Assets/Scripts
 INPUT_ENCODING         = UTF-8
-FILE_PATTERNS          = *.cs
+FILE_PATTERNS          = *.cs *.CS
 RECURSIVE              = YES
 
 EXCLUDE                = 
@@ -49,4 +49,4 @@ WARN_IF_UNDOCUMENTED   = YES
 WARN_IF_DOC_ERROR      = YES
 
 FULL_PATH_NAMES        = NO
-STRIP_FROM_PATH        = Assets/Scripts
+STRIP_FROM_PATH        = ./Assets/Scripts
